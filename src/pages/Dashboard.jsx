@@ -43,6 +43,16 @@ export default function Dashboard() {
             View products added to your cart.
           </p>
         </Link>
+        <Link
+          to="/add-product"
+          className="card"
+        >
+          <h3> Add Product</h3>
+
+          <p>
+            Create new products.
+          </p>
+        </Link>
 
       </div>
 
