@@ -1,0 +1,97 @@
+.home {
+  text-align: center;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+/* HERO SECTION */
+.hero {
+  padding: 120px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+/* MAIN TITLE */
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #111827;
+
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+/* DESCRIPTION */
+.hero p {
+  font-size: 1.15rem;
+  color: #6b7280;
+
+  max-width: 650px;
+  line-height: 1.6;
+
+  margin: 0 auto;
+}
+
+/* BUTTON */
+.shop-btn {
+  background: #2563eb;
+  color: white;
+
+  padding: 14px 28px;
+  border-radius: 10px;
+
+  font-weight: 600;
+  font-size: 15px;
+
+  border: none;
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+  text-decoration: none;
+}
+
+.shop-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.3);
+}
+
+/* =========================
+   📱 RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 90px 16px;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 70px 14px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .shop-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}

@@ -1,0 +1,119 @@
+/* PAGE WRAPPER */
+.add-product-page {
+  min-height: 100vh;
+  background: #f6f7fb;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 40px 16px;
+}
+
+/* CARD CONTAINER */
+.add-product-container {
+  width: 100%;
+  max-width: 650px;
+
+  background: #ffffff;
+  border-radius: 18px;
+
+  padding: 28px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* TITLE */
+.add-product-container h1 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #111827;
+
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.add-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* INPUTS */
+.add-product-form input,
+.add-product-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition: all 0.2s ease;
+
+  background: #f9fafb;
+}
+
+.add-product-form textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+.add-product-form input:focus,
+.add-product-form textarea:focus {
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+/* BUTTON */
+.add-product-form button {
+  margin-top: 10px;
+
+  background: #2563eb;
+  color: white;
+
+  border: none;
+  padding: 12px;
+
+  border-radius: 12px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.add-product-form button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   📱 RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .add-product-container {
+    padding: 22px;
+  }
+
+  .add-product-container h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-product-container {
+    padding: 18px;
+    border-radius: 14px;
+  }
+}
